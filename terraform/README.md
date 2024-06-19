@@ -17,3 +17,7 @@ This project sets up a basic AWS infrastructure using Terraform, including a VPC
   ```bash
   ssh -i path/to/deployer-key ubuntu@<EC2_PUBLIC_IP>
 
+## Cleanup ##
+Run terraform destroy to remove all resources created by this configuration.
+
+- Make sure to replace placeholders such as the AMI ID and bucket name with actual values suitable for your region and requirements. Additionally, ensure the SSH key (`deployer-key.pub`) is generated before applying the Terraform scripts. This setup will provide a basic overview and a functional AWS environment within the Free Tier limitations.
