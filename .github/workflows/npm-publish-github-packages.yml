@@ -20,10 +20,9 @@ jobs:
         node-version: '16'
 
     - name: Install dependencies
-      run: npm install
+      run: npm install --save-dev jest supertest eslint
 
     - name: Run Linter
-      run: npm install --save-dev jest supertest eslint
       run: npm run lint
 
     - name: Run Tests
